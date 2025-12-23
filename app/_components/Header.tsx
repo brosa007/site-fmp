@@ -3,10 +3,22 @@
 import { navigationConfig } from "@/app/_lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { NavDropdown } from "./NavDropdown";
 import { Button } from "./ui/button";
 
 export function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const mainNavItems = navigationConfig.filter(
     (item) => item.label !== "Conteúdos" && item.label !== "Minha FMP",
   );
@@ -16,10 +28,18 @@ export function Header() {
   );
 
   return (
-    <header className="absolute top-0 right-0 left-0 z-50 w-full py-16">
+    <header
+      className={`${
+        isScrolled ? "fixed" : "absolute"
+      } top-0 right-0 left-0 z-50 w-full py-16 transition-all duration-300`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto w-[80%]">
-          <div className="absolute inset-0 rounded-4xl bg-white/6 backdrop-blur-md" />
+          <div
+            className={`absolute inset-0 rounded-4xl backdrop-blur-md transition-all duration-300 ${
+              isScrolled ? "bg-black/80" : "bg-white/6"
+            }`}
+          />
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <Image src="/logo-fmp.png" alt="FMP" width={100} height={100} />
