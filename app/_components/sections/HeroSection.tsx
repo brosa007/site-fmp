@@ -13,10 +13,6 @@ interface HeroSectionProps {
   className?: string;
 }
 
-/**
- * HeroSection - Banner principal de destaque
- * Componente reutilizável com imagem de fundo, título, divisor e CTA
- */
 export function HeroSection({
   title,
   backgroundImage,
@@ -26,11 +22,10 @@ export function HeroSection({
   return (
     <section
       className={cn(
-        "relative flex min-h-[90vh] items-center justify-center overflow-hidden",
+        "relative flex min-h-[90vh] items-end justify-center overflow-hidden py-20",
         className,
       )}
     >
-      {/* Background Image */}
       {backgroundImage && (
         <div className="absolute inset-0 z-0">
           <Image
@@ -44,18 +39,15 @@ export function HeroSection({
         </div>
       )}
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center sm:px-6 lg:px-8">
         <h1 className="mb-8 text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
           {title}
         </h1>
 
-        {/* Divisor */}
         <div className="mb-8 flex justify-center">
-          <div className="h-px w-24 bg-[var(--color-bege)]" />
+          <div className="h-px w-24 bg-[#f2dfbb]" />
         </div>
 
-        {/* CTA */}
         {primaryAction && (
           <Button
             asChild
