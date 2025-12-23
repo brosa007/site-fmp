@@ -19,7 +19,7 @@ export default function NPJPage() {
         { label: "Graduação", href: "/ensino/graduacao" },
         { label: "NPJ" },
       ]}
-      children={[
+      links={[
         {
           label: "Núcleo de Práticas Jurídicas",
           href: ROUTES.ENSINO.GRADUACAO.NPJ.NUCLEO_DE_PRATICAS_JURIDICAS,

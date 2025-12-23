@@ -14,7 +14,7 @@ export default function PesquisaPage() {
       title="Pesquisa"
       description="Página sobre pesquisa"
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Pesquisa" }]}
-      children={[
+      links={[
         {
           label: "Documentos e Editais",
           href: ROUTES.PESQUISA.DOCUMENTOS_E_EDITAIS,

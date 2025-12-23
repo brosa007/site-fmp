@@ -18,7 +18,7 @@ export default function CursosLivresPage() {
         { label: "Ensino", href: "/ensino" },
         { label: "Cursos Livres" },
       ]}
-      children={[
+      links={[
         {
           label: "Cursos Livres FMP",
           href: ROUTES.ENSINO.CURSOS_LIVRES.CURSOS_LIVRES_FMP,

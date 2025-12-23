@@ -18,7 +18,7 @@ export default function IdentidadeVisualPage() {
         { label: "Sobre a FMP", href: "/sobre-a-fmp" },
         { label: "Identidade Visual" },
       ]}
-      children={[
+      links={[
         { label: "Marca", href: ROUTES.SOBRE_A_FMP.IDENTIDADE_VISUAL.MARCA },
         { label: "Manual", href: ROUTES.SOBRE_A_FMP.IDENTIDADE_VISUAL.MANUAL },
       ]}

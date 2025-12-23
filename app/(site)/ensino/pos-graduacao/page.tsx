@@ -18,7 +18,7 @@ export default function PosGraduacaoPage() {
         { label: "Ensino", href: "/ensino" },
         { label: "Pós-Graduação" },
       ]}
-      children={[
+      links={[
         { label: "Pós-Graduação FMP", href: ROUTES.ENSINO.POS_GRADUACAO.POS_GRADUACAO_FMP },
         { label: "Pós Presencial", href: ROUTES.ENSINO.POS_GRADUACAO.POS_PRESENCIAL },
         { label: "Pós EAD", href: ROUTES.ENSINO.POS_GRADUACAO.POS_EAD },

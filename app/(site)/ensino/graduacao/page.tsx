@@ -18,7 +18,7 @@ export default function GraduacaoPage() {
         { label: "Ensino", href: "/ensino" },
         { label: "Graduação" },
       ]}
-      children={[
+      links={[
         { label: "Curso de Direito", href: ROUTES.ENSINO.GRADUACAO.CURSO_DO_DIRETO },
         {
           label: "Formas de Ingresso",

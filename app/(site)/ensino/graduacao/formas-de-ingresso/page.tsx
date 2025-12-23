@@ -19,7 +19,7 @@ export default function FormasDeIngressoPage() {
         { label: "Graduação", href: "/ensino/graduacao" },
         { label: "Formas de Ingresso" },
       ]}
-      children={[
+      links={[
         { label: "Vestibular", href: ROUTES.ENSINO.GRADUACAO.FORMAS_DE_INGRESSO.VESTIBULAR },
         { label: "ENEM", href: ROUTES.ENSINO.GRADUACAO.FORMAS_DE_INGRESSO.ENEM },
         {

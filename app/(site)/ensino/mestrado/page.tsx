@@ -18,7 +18,7 @@ export default function MestradoPage() {
         { label: "Ensino", href: "/ensino" },
         { label: "Mestrado" },
       ]}
-      children={[
+      links={[
         { label: "Mestrado FMP", href: ROUTES.ENSINO.MESTRADO.MESTRADO_FMP },
         { label: "Sobre o Curso", href: ROUTES.ENSINO.MESTRADO.SOBRE_O_CURSO },
         { label: "Processo Seletivo", href: ROUTES.ENSINO.MESTRADO.PROCESSO_SELETIVO },

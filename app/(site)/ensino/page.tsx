@@ -14,7 +14,7 @@ export default function EnsinoPage() {
       title="Ensino"
       description="Página sobre o ensino da FMP"
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Ensino" }]}
-      children={[
+      links={[
         { label: "Graduação", href: ROUTES.ENSINO.GRADUACAO.BASE },
         { label: "Pós-Graduação", href: ROUTES.ENSINO.POS_GRADUACAO.BASE },
         { label: "Mestrado", href: ROUTES.ENSINO.MESTRADO.BASE },

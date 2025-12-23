@@ -18,7 +18,7 @@ export default function ComissaoPropriaDeAvaliacaoPage() {
         { label: "Sobre a FMP", href: "/sobre-a-fmp" },
         { label: "Comissão Própria de Avaliação" },
       ]}
-      children={[
+      links={[
         { label: "CPA", href: ROUTES.SOBRE_A_FMP.COMISSAO_PROPRIA_DE_AVALIACAO.CPA },
       ]}
     />

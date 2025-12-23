@@ -18,7 +18,7 @@ export default function FaculdadePage() {
         { label: "Sobre a FMP", href: "/sobre-a-fmp" },
         { label: "Faculdade" },
       ]}
-      children={[
+      links={[
         { label: "Quem Somos", href: ROUTES.SOBRE_A_FMP.FACULDADE.QUEM_SOMOS },
         {
           label: "Selos e Reconhecimento",

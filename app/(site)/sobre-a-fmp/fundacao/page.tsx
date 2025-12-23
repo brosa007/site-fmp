@@ -18,7 +18,7 @@ export default function FundacaoPage() {
         { label: "Sobre a FMP", href: "/sobre-a-fmp" },
         { label: "Fundação" },
       ]}
-      children={[
+      links={[
         { label: "Quem Somos", href: ROUTES.SOBRE_A_FMP.FUNDACAO.QUEM_SOMOS },
         {
           label: "Estrutura Organizacional",

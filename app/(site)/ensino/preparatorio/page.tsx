@@ -18,7 +18,7 @@ export default function PreparatorioPage() {
         { label: "Ensino", href: "/ensino" },
         { label: "Preparatório" },
       ]}
-      children={[
+      links={[
         {
           label: "Preparatório FMP",
           href: ROUTES.ENSINO.PREPARATORIO.PREPARATORIO_FMP,

@@ -14,7 +14,7 @@ export default function SobreAFMPPage() {
       title="Sobre a FMP"
       description="Página sobre a FMP"
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Sobre a FMP" }]}
-      children={[
+      links={[
         { label: "Fundação", href: ROUTES.SOBRE_A_FMP.FUNDACAO.BASE },
         { label: "Faculdade", href: ROUTES.SOBRE_A_FMP.FACULDADE.BASE },
         {

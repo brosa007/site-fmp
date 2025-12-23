@@ -14,7 +14,7 @@ export default function ConteudosPage() {
       title="Conteúdos"
       description="Página sobre conteúdos"
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Conteúdos" }]}
-      children={[
+      links={[
         { label: "Estúdio 360", href: ROUTES.CONTEUDOS.ESTUDIO_360 },
         { label: "Projetos Acadêmicos", href: ROUTES.CONTEUDOS.PROJETOS_ACADEMICOS },
         {
