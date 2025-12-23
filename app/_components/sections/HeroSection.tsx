@@ -26,7 +26,7 @@ export function HeroSection({
   return (
     <section
       className={cn(
-        "relative flex min-h-[500px] items-center justify-center overflow-hidden",
+        "relative flex min-h-[90vh] items-center justify-center overflow-hidden",
         className,
       )}
     >

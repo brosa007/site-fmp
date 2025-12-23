@@ -6,12 +6,7 @@ import Link from "next/link";
 import { NavDropdown } from "./NavDropdown";
 import { Button } from "./ui/button";
 
-/**
- * Header - Cabeçalho principal do site
- * Design com barra translúcida escura, backdrop blur e paleta de cores da marca
- */
 export function Header() {
-  // Filtra apenas os itens principais do header (sem "Conteúdos" e "Minha FMP" na nav)
   const mainNavItems = navigationConfig.filter(
     (item) => item.label !== "Conteúdos" && item.label !== "Minha FMP",
   );
@@ -21,7 +16,7 @@ export function Header() {
   );
 
   return (
-    <header className="absolute top-0 right-0 left-0 z-50 w-full">
+    <header className="absolute top-0 right-0 left-0 z-50 w-full py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto w-[80%]">
           <div className="absolute inset-0 rounded-4xl bg-white/6 backdrop-blur-md" />
