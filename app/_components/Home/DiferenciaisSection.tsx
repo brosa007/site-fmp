@@ -5,7 +5,7 @@ import { containerFMPVariants, titleVariants } from "@/app/_lib/variants";
 import { motion } from "framer-motion";
 import { diferenciais, animationVariants } from "./constants";
 
-export function DiferenciaisSection() {
+export default function DiferenciaisSection() {
   return (
     <section className="py-16 md:py-24 bg-secondary">
       <div className={containerFMPVariants()}>

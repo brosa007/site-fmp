@@ -1,24 +1,29 @@
-import { generateMetadata } from "@/app/_lib/seo";
-import { PlaceholderPage } from "@/app/_lib/page-helpers";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Nossa História",
-  description: "Nossa história - Fundação",
-  path: "/sobre-a-fmp/fundacao/nossa-historia",
-});
+import HeroSection from "@/app/_components/Home/HeroSection";
+import ComoNasceuFMPSection from "@/app/_components/SobreAFMP/nossa-historia/ComoNasceuFMPSection";
+import FinalTextSection from "@/app/_components/SobreAFMP/nossa-historia/FinalTextSection";
+import LogosImpactSection from "@/app/_components/SobreAFMP/nossa-historia/LogosImpactSection";
+import MilestonesSection from "@/app/_components/SobreAFMP/nossa-historia/MilestonesSection";
+import MinisterioPublicoSection from "@/app/_components/SobreAFMP/nossa-historia/MinisterioPublicoSection";
+
+const placeholderImage = "/hero-section.png";
 
 export default function NossaHistoriaPage() {
   return (
-    <PlaceholderPage
-      title="Nossa História"
-      description="Página sobre nossa história"
-      breadcrumbs={[
-        { label: "Home", href: "/" },
-        { label: "Sobre a FMP", href: "/sobre-a-fmp" },
-        { label: "Fundação", href: "/sobre-a-fmp/fundacao" },
-        { label: "Nossa História" },
-      ]}
-    />
+    <>
+      <HeroSection
+        title="Uma história de propósito"
+        subtitle="Inspirado por modelos internacionais e guiada por excelência e compromisso cívico."
+        backgroundImage={placeholderImage}
+      />
+
+      <ComoNasceuFMPSection />
+      <MinisterioPublicoSection />
+      <MilestonesSection />
+      <LogosImpactSection />
+      <FinalTextSection />
+    </>
   );
 }
 

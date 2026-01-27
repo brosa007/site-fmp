@@ -9,7 +9,7 @@ interface VideoSectionProps {
   alt?: string;
 }
 
-export function VideoSection({ 
+export default function VideoSection({ 
   imageSrc = "/hero-section.png", 
   alt = "Campus FMP" 
 }: VideoSectionProps) {

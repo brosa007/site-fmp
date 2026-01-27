@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export function AutoridadeSection() {
+export default function AutoridadeSection() {
   return (
     <section className="py-16 md:py-24 bg-secondary">
       <div className={containerFMPVariants()}>
