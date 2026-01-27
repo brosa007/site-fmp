@@ -47,3 +47,73 @@ export const animationVariants = {
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   },
 };
+
+// Placeholder data - substituir com dados reais
+export const reconhecimentos = [
+  {
+    title: "OAB Recomenda",
+    image: placeholderImage,
+    description: "Selo OAB Recomenda",
+  },
+  {
+    title: "MEC",
+    image: placeholderImage,
+    description: "Nota máxima no credenciamento",
+  },
+  {
+    title: "Reconhecimento",
+    image: placeholderImage,
+    description: "Excelência em ensino",
+  },
+];
+
+export const noticias = [
+  {
+    id: "1",
+    title: "FMP realiza evento sobre Direito Constitucional",
+    category: "EVENTOS",
+    date: "15 Jan 2026",
+    image: placeholderImage,
+    href: "/conteudos/noticias/1",
+  },
+  {
+    id: "2",
+    title: "Novos cursos de pós-graduação disponíveis",
+    category: "NOTÍCIAS",
+    date: "12 Jan 2026",
+    image: placeholderImage,
+    href: "/conteudos/noticias/2",
+  },
+  {
+    id: "3",
+    title: "Inscrições abertas para o vestibular 2026",
+    category: "ADMISSÃO",
+    date: "10 Jan 2026",
+    image: placeholderImage,
+    href: "/ensino/graduacao/formas-de-ingresso",
+  },
+];
+
+export const depoimentos = [
+  {
+    id: "1",
+    quote: "A FMP foi fundamental na minha formação como jurista. Os professores são excelentes e o ambiente acadêmico é inspirador.",
+    name: "Maria Silva",
+    course: "Graduação em Direito - 2020",
+    image: placeholderImage,
+  },
+  {
+    id: "2",
+    quote: "O conhecimento adquirido na FMP me preparou perfeitamente para os desafios da advocacia. Recomendo a todos!",
+    name: "João Santos",
+    course: "Graduação em Direito - 2019",
+    image: placeholderImage,
+  },
+  {
+    id: "3",
+    quote: "A qualidade do ensino e o comprometimento dos docentes fazem da FMP uma referência em educação jurídica.",
+    name: "Ana Costa",
+    course: "Mestrado - 2021",
+    image: placeholderImage,
+  },
+];

@@ -34,3 +34,44 @@ export const titleVariants = cva("font-heading italic font-medium", {
 });
 
 export type TitleVariants = VariantProps<typeof titleVariants>;
+
+export const cardVariants = cva("rounded-lg transition-all duration-300", {
+  variants: {
+    variant: {
+      default: "bg-card border border-border hover:border-primary hover:shadow-md",
+      featured: "bg-primary text-primary-foreground",
+      light: "bg-secondary border border-border",
+      white: "bg-white border border-border shadow-sm",
+    },
+    padding: {
+      none: "",
+      sm: "p-4",
+      md: "p-6",
+      lg: "p-8",
+    },
+  },
+  defaultVariants: {
+    variant: "default",
+    padding: "md",
+  },
+});
+
+export type CardVariants = VariantProps<typeof cardVariants>;
+
+export const badgeVariants = cva(
+  "inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground",
+        secondary: "bg-secondary text-foreground",
+        outline: "border border-primary text-primary",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+);
+
+export type BadgeVariants = VariantProps<typeof badgeVariants>;

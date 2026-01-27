@@ -1,12 +1,15 @@
 "use client";
 
 import {
-  HeroSection,
+  AutoridadeSection,
   CursosSection,
+  DepoimentosSection,
   DiferenciaisSection,
+  HeroSection,
+  NoticiasSection,
   OABRecomendaSection,
-  CTASection,
-  VideoSection,
+  ReconhecimentosSection,
+  VideoSection
 } from "@/app/_components/Home";
 import { cn } from "@/app/_lib/utils";
 import { buttonFMPVariants } from "@/app/_lib/variants";
@@ -44,8 +47,11 @@ export default function Home() {
       <CursosSection />
       <DiferenciaisSection />
       <OABRecomendaSection />
-      <CTASection />
+      <AutoridadeSection />
+      <ReconhecimentosSection />
       <VideoSection />
+      <NoticiasSection />
+      <DepoimentosSection />
     </>
   );
 }
