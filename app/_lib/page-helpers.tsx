@@ -8,9 +8,6 @@ interface PlaceholderPageProps {
   links?: Array<{ label: string; href: string }>;
 }
 
-/**
- * Componente helper para criar páginas placeholder
- */
 export function PlaceholderPage({
   title,
   description,
