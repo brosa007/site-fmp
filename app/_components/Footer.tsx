@@ -97,14 +97,14 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[var(--color-bege-claro)] py-12">
+    <footer className="bg-fmp-black py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo e Redes Sociais */}
           <div className="flex flex-col">
             <Link href="/" className="mb-6 inline-block">
               <Image
-                src="/logo-fmp-dark.png"
+                src="/logo-fmp-branco.png"
                 alt="FMP"
                 width={100}
                 height={100}

@@ -1,5 +1,7 @@
 "use client";
 
+import { cn } from "@/app/_lib/utils";
+import { containerFMPVariants, titleVariants } from "@/app/_lib/variants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,12 +10,12 @@ import { cursos, animationVariants } from "./constants";
 export function CursosSection() {
   return (
     <section className="py-16 md:py-24 bg-background">
-      <div className="container-fmp">
+      <div className={containerFMPVariants()}>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="title-section mb-10"
+          className={cn(titleVariants({ variant: "section" }), "mb-10")}
         >
           Conheça nossos cursos:
         </motion.h2>

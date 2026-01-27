@@ -8,6 +8,8 @@ import {
   CTASection,
   VideoSection,
 } from "@/app/_components/Home";
+import { cn } from "@/app/_lib/utils";
+import { buttonFMPVariants } from "@/app/_lib/variants";
 import Link from "next/link";
 
 const placeholderImage = "/hero-section.png";
@@ -21,10 +23,19 @@ export default function Home() {
         backgroundImage={placeholderImage}
       >
         <div className="mt-6 flex flex-wrap gap-4">
-          <Link href="/ensino/graduacao" className="btn-fmp-primary">
+          <Link
+            href="/ensino/graduacao"
+            className={buttonFMPVariants({ variant: "primary" })}
+          >
             Conheça a Graduação
           </Link>
-          <Link href="/sobre-a-fmp/fundacao/quem-somos" className="btn-fmp bg-fmp-white/20 text-fmp-white hover:bg-fmp-white hover:text-foreground">
+          <Link
+            href="/sobre-a-fmp/fundacao/quem-somos"
+            className={cn(
+              buttonFMPVariants({ variant: "ghost" }),
+              "bg-fmp-white/20 text-fmp-white hover:bg-fmp-white hover:text-foreground"
+            )}
+          >
             Sobre a FMP
           </Link>
         </div>

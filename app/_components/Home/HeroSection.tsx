@@ -1,3 +1,5 @@
+import { cn } from "@/app/_lib/utils";
+import { containerFMPVariants, titleVariants } from "@/app/_lib/variants";
 import Image from "next/image";
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
@@ -25,8 +27,10 @@ export function HeroSection({
         priority
       />
       <div className="hero-overlay absolute inset-0" />
-      <div className="container-fmp relative z-10 text-center text-fmp-white">
-        <h1 className="title-display mb-4">{title}</h1>
+      <div className={cn(containerFMPVariants(), "relative z-10 text-center text-fmp-white")}>
+        <h1 className={cn(titleVariants({ variant: "display" }), "mb-4")}>
+          {title}
+        </h1>
         {subtitle && (
           <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto">
             {subtitle}

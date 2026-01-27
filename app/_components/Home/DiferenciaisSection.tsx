@@ -1,17 +1,19 @@
 "use client";
 
+import { cn } from "@/app/_lib/utils";
+import { containerFMPVariants, titleVariants } from "@/app/_lib/variants";
 import { motion } from "framer-motion";
 import { diferenciais, animationVariants } from "./constants";
 
 export function DiferenciaisSection() {
   return (
     <section className="py-16 md:py-24 bg-secondary">
-      <div className="container-fmp">
+      <div className={containerFMPVariants()}>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="title-section mb-10"
+          className={cn(titleVariants({ variant: "section" }), "mb-10")}
         >
           A diferença começa na escolha
         </motion.h2>

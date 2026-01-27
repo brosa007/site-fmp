@@ -1,5 +1,6 @@
 "use client";
 
+import { containerFMPVariants } from "@/app/_lib/variants";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import Link from "next/link";
 export function OABRecomendaSection() {
   return (
     <section className="py-16 md:py-24 bg-background">
-      <div className="container-fmp">
+      <div className={containerFMPVariants()}>
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}

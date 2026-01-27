@@ -1,12 +1,14 @@
 "use client";
 
+import { cn } from "@/app/_lib/utils";
+import { buttonFMPVariants, containerFMPVariants } from "@/app/_lib/variants";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export function CTASection() {
   return (
     <section className="py-16 md:py-24 bg-fmp-black text-fmp-white">
-      <div className="container-fmp">
+      <div className={containerFMPVariants()}>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +34,10 @@ export function CTASection() {
             <h3 className="font-heading italic text-2xl mb-4">
               Construa sua autoridade no Direito.
             </h3>
-            <Link href="/ensino/graduacao/formas-de-ingresso" className="btn-fmp-primary">
+            <Link
+              href="/ensino/graduacao/formas-de-ingresso"
+              className={buttonFMPVariants({ variant: "primary" })}
+            >
               Formas de Ingresso
             </Link>
           </motion.div>

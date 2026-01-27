@@ -42,7 +42,7 @@ export function Header() {
           />
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
-              <Image src="/logo-fmp.png" alt="FMP" width={100} height={100} />
+              <Image src="/logo-fmp-branco.png" alt="FMP" width={100} height={100} />
 
               <nav className="hidden items-center gap-8 lg:flex">
                 <Link
