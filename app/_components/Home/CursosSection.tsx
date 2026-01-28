@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { cursos, animationVariants } from "./constants";
 
-export function CursosSection() {
+export default function CursosSection() {
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className={containerFMPVariants()}>

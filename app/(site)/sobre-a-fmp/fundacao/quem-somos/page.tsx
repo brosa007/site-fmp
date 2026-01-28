@@ -1,24 +1,25 @@
-import { generateMetadata } from "@/app/_lib/seo";
-import { PlaceholderPage } from "@/app/_lib/page-helpers";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Quem Somos - Fundação",
-  description: "Quem somos - Fundação",
-  path: "/sobre-a-fmp/fundacao/quem-somos",
-});
+import HeroSection from "@/app/_components/Home/HeroSection";
+import AboutFMPTextSection from "@/app/_components/SobreAFMP/quem-somos/AboutFMPTextSection";
+import AdministrativeCouncilSection from "@/app/_components/SobreAFMP/quem-somos/AdministrativeCouncilSection";
+import OrganizationalIdentitySection from "@/app/_components/SobreAFMP/quem-somos/OrganizationalIdentitySection";
+
+const placeholderImage = "/hero-section.png";
 
 export default function FundacaoQuemSomosPage() {
   return (
-    <PlaceholderPage
-      title="Quem Somos - Fundação"
-      description="Página sobre quem somos - fundação"
-      breadcrumbs={[
-        { label: "Home", href: "/" },
-        { label: "Sobre a FMP", href: "/sobre-a-fmp" },
-        { label: "Fundação", href: "/sobre-a-fmp/fundacao" },
-        { label: "Quem Somos" },
-      ]}
-    />
+    <>
+      <HeroSection
+        title="Fundação Escola Superior do Ministério Público"
+        subtitle="Fundada por Promotores e Procuradores, a FMP fortalece o ensino jurídico com pesquisa, extensão e prática."
+        backgroundImage={placeholderImage}
+      />
+
+      <AboutFMPTextSection />
+      <AdministrativeCouncilSection />
+      <OrganizationalIdentitySection />
+    </>
   );
 }
 

@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { noticias, animationVariants } from "./constants";
 
-export function NoticiasSection() {
+export default function NoticiasSection() {
   const featuredNews = noticias.slice(0, 2);
   const newsList = noticias;
 

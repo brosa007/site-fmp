@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export function OABRecomendaSection() {
+export default function OABRecomendaSection() {
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className={containerFMPVariants()}>

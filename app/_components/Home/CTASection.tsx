@@ -5,7 +5,7 @@ import { buttonFMPVariants, containerFMPVariants } from "@/app/_lib/variants";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export function CTASection() {
+export default function CTASection() {
   return (
     <section className="py-16 md:py-24 bg-fmp-black text-fmp-white">
       <div className={containerFMPVariants()}>

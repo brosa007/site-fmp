@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { reconhecimentos, animationVariants } from "./constants";
 
-export function ReconhecimentosSection() {
+export default function ReconhecimentosSection() {
   return (
     <section className="py-16 md:py-24 bg-secondary">
       <div className={containerFMPVariants()}>

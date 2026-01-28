@@ -1,24 +1,24 @@
-import { generateMetadata } from "@/app/_lib/seo";
-import { PlaceholderPage } from "@/app/_lib/page-helpers";
+"use client";
 
-export const metadata = generateMetadata({
-  title: "Estrutura Organizacional",
-  description: "Estrutura organizacional da fundação",
-  path: "/sobre-a-fmp/fundacao/estrutura-organizacional",
-});
+import HeroSection from "@/app/_components/Home/HeroSection";
+import AdministrativeCouncilSectionEstrutura from "@/app/_components/SobreAFMP/estrutura-organizacional/AdministrativeCouncilSectionEstrutura";
+import OrganizationalStructureSection from "@/app/_components/SobreAFMP/estrutura-organizacional/OrganizationalStructureSection";
+import QuemDefinePadraoSection from "@/app/_components/SobreAFMP/estrutura-organizacional/QuemDefinePadraoSection";
+
+const placeholderImage = "/hero-section.png";
 
 export default function EstruturaOrganizacionalPage() {
   return (
-    <PlaceholderPage
-      title="Estrutura Organizacional"
-      description="Página sobre estrutura organizacional"
-      breadcrumbs={[
-        { label: "Home", href: "/" },
-        { label: "Sobre a FMP", href: "/sobre-a-fmp" },
-        { label: "Fundação", href: "/sobre-a-fmp/fundacao" },
-        { label: "Estrutura Organizacional" },
-      ]}
-    />
+    <>
+      <HeroSection
+        title="Estrutura Organizacional da FMP"
+        subtitle="Gestão sistêmica e integrada para excelência em ensino jurídico"
+        backgroundImage={placeholderImage}
+      />
+      <QuemDefinePadraoSection />
+      <AdministrativeCouncilSectionEstrutura />
+      <OrganizationalStructureSection />
+    </>
   );
 }
 

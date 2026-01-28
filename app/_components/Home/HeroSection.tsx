@@ -11,7 +11,7 @@ interface HeroSectionProps {
   children?: ReactNode;
 }
 
-export function HeroSection({
+export default function HeroSection({
   title,
   subtitle,
   backgroundImage,
